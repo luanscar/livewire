@@ -30,7 +30,7 @@
 
 
             <!-- Page Content -->
-            <main class="container flex flex-col h-full text-white" {{ $attributes }}>
+            <main class="container mx-auto flex flex-col h-full text-white" {{ $attributes }}>
                 {{ $slot }}
             </main>
         </div>

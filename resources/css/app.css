@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.minmax {
+    height: min(285px, max(175px, 41vw));
+}
