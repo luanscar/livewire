@@ -5,16 +5,11 @@
 
         <div class="hidden md:flex md:basis-20 xl:basis-60 md:justify-center xl:relative">
             <div class="flex flex-col gap-y-8 xl:fixed md:fixed top-0">
-                <x-menu.item icon="twitter" route="/" svg="w-8  fill-white" />
-                <x-menu.item icon="home" title="Página Inicial" route="/" svg="h-8 fill-white" class="flex xl:mr-6 cursor-pointer hover:bg-gray-600/20 rounded-full items-center xl:text-2xl" />
-                <x-menu.item icon="search" title="Search" route="/" svg="h-8  fill-white" class="flex xl:mr-6  items-center xl:text-2xl"  />
-                <x-menu.item icon="notifications" title="Notifications" route="/" svg="h-8 flex fill-white" class="flex xl:mr-6  items-center xl:text-2xl" />
-                <x-menu.item icon="message" title="Message" route="/" svg="h-8  fill-white" class="flex xl:mr-6  items-center xl:text-2xl" />
-                <x-menu.item icon="blue-md" title="Verify" route="/" svg="h-8  fill-white" class="flex xl:mr-6  items-center xl:text-2xl" />
-                <x-menu.item icon="profile" title=" Perfil" route="/" svg="h-8  fill-white" class="flex xl:mr-6  items-center xl:text-2xl" />
-                <x-menu.item icon="dots-circle" title="Mais" route="/" svg="h-8  fill-white" class="flex xl:mr-6  items-center xl:text-2xl" />
 
-                <x-menu.item icon="tweet" title="Tweetar" route="/" svg="h-8 xl:hidden fill-white" class="flex xl:bg-blue-900 xl:mr-6 items-center text-2xl" />
+                <x-menu>
+                    <x-menu.item icon="twitter" route="/" svg="w-8 fill-white" />
+                    <x-menu.item icon="home" title="Páginal Inicial" route="/" svg="w-8 fill-white" />
+                </x-menu>
 
             </div>
         </div>
@@ -63,7 +58,8 @@
                 </div>
 
 
-            </div><div class="flex flex-col  w-full">
+            </div>
+            <div class="flex flex-col  w-full">
                 <div class="flex flex-row justify-between">
 
                     <div>
@@ -90,7 +86,8 @@
                 </div>
 
 
-            </div><div class="flex flex-col  w-full">
+            </div>
+            <div class="flex flex-col  w-full">
                 <div class="flex flex-row justify-between">
 
                     <div>
@@ -117,7 +114,8 @@
                 </div>
 
 
-            </div><div class="flex flex-col  w-full">
+            </div>
+            <div class="flex flex-col  w-full">
                 <div class="flex flex-row justify-between">
 
                     <div>
@@ -144,7 +142,8 @@
                 </div>
 
 
-            </div><div class="flex flex-col  w-full">
+            </div>
+            <div class="flex flex-col  w-full">
                 <div class="flex flex-row justify-between">
 
                     <div>
