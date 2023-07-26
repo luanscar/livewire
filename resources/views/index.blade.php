@@ -1,5 +1,5 @@
 <x-app-layout>
-
+    {{-- START CONTAINER --}}
     <div class="container flex flex-row h-full mx-auto text-white">
 
 
@@ -18,13 +18,33 @@
 
             </div>
 
-
-
         </div>
 
 
         {{-- ===================== MAIN ===================== --}}
-        <div class="md:border-x flex flex-col md:basis-[600px] items-center h-screen">
+        <div class="md:border-x flex flex-col w-full md:basis-[600px] h-screen ">
+
+            <div class="sticky top-0 text-2xl backdrop-blur xl:backdrop-blur-xl">
+
+                <div class="flex flex-col">
+
+                    <div class="flex-none md:flex-1 z-2">
+                        <h2 class="px-4 py-2 text-xl font-semibold text-white">Home</h2>
+                    </div>
+
+                    <ul class="w-full grid grid-cols-2 text-center text-lg text-bold text-gray-500 border-b-[0.625px]">
+                        <li class="pt-4 cursor-pointer hover:bg-[#e7e9ea1a] flex justify-center">
+                            <div class="border-b-4 w-fit border-twitter">For You</div>
+                        </li>
+                        <li class="pt-4 cursor-pointer hover:bg-[#e7e9ea1a] flex justify-center">
+                            <div class="border-b-4 border-transparent w-fit">Following</div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+
 
             <header class="md:hidden grid grid-cols-3 grid-flow-col w-full justify-items-start py-[10.5px] px-4">
 
@@ -39,153 +59,156 @@
                 </div>
             </header>
 
-            <div class="flex flex-col w-full">
-                <div class="flex flex-row justify-between">
+
+
+
+            <div>
+                <div class="flex flex-col w-full">
+                    <div class="flex flex-row justify-between">
+
+                        <div>
+                            <span>Name</span>
+                            <span class="text-sm text-white/50">@luangbt</span>
+                            <span>•</span>
+                            <span class="text-sm text-white/50">14 min</span>
+                        </div>
+
+                        <div class="flex items-center">
+                            <x-icons.dots-h class="w-5 fill-slate-500" />
+                        </div>
+                    </div>
 
                     <div>
-                        <span>Name</span>
-                        <span class="text-sm text-white/50">@luangbt</span>
-                        <span>•</span>
-                        <span class="text-sm text-white/50">14 min</span>
+                        <span>
+                            eh que hoje eu acordei meio taehyung de birra chateado fazendo bico pq o namjoon e o jimin
+                            tavam sentados juntos mas longe dele
+                        </span>
                     </div>
 
-                    <div class="flex items-center">
-                        <x-icons.dots-h class="w-5 fill-slate-500" />
+                    <div class="w-full mt-3 rounded-lg minmax bg-slate-400">
+
                     </div>
-                </div>
 
-                <div>
-                    <span>
-                        eh que hoje eu acordei meio taehyung de birra chateado fazendo bico pq o namjoon e o jimin
-                        tavam sentados juntos mas longe dele
-                    </span>
-                </div>
-
-                <div class="w-full mt-3 rounded-lg minmax bg-slate-400">
 
                 </div>
 
+                <div class="flex flex-col w-full">
+                    <div class="flex flex-row justify-between">
 
-            </div>
-            <div class="flex flex-col w-full">
-                <div class="flex flex-row justify-between">
+                        <div>
+                            <span>Name</span>
+                            <span class="text-sm text-white/50">@luangbt</span>
+                            <span>•</span>
+                            <span class="text-sm text-white/50">14 min</span>
+                        </div>
+
+                        <div class="flex items-center">
+                            <x-icons.dots-h class="w-5 fill-slate-500" />
+                        </div>
+                    </div>
 
                     <div>
-                        <span>Name</span>
-                        <span class="text-sm text-white/50">@luangbt</span>
-                        <span>•</span>
-                        <span class="text-sm text-white/50">14 min</span>
+                        <span>
+                            eh que hoje eu acordei meio taehyung de birra chateado fazendo bico pq o namjoon e o jimin
+                            tavam sentados juntos mas longe dele
+                        </span>
                     </div>
 
-                    <div class="flex items-center">
-                        <x-icons.dots-h class="w-5 fill-slate-500" />
+                    <div class="w-full mt-3 rounded-lg minmax bg-slate-400">
+
                     </div>
-                </div>
 
-                <div>
-                    <span>
-                        eh que hoje eu acordei meio taehyung de birra chateado fazendo bico pq o namjoon e o jimin
-                        tavam sentados juntos mas longe dele
-                    </span>
-                </div>
-
-                <div class="w-full mt-3 rounded-lg minmax bg-slate-400">
 
                 </div>
 
+                <div class="flex flex-col w-full">
+                    <div class="flex flex-row justify-between">
 
-            </div>
-            <div class="flex flex-col w-full">
-                <div class="flex flex-row justify-between">
+                        <div>
+                            <span>Name</span>
+                            <span class="text-sm text-white/50">@luangbt</span>
+                            <span>•</span>
+                            <span class="text-sm text-white/50">14 min</span>
+                        </div>
+
+                        <div class="flex items-center">
+                            <x-icons.dots-h class="w-5 fill-slate-500" />
+                        </div>
+                    </div>
 
                     <div>
-                        <span>Name</span>
-                        <span class="text-sm text-white/50">@luangbt</span>
-                        <span>•</span>
-                        <span class="text-sm text-white/50">14 min</span>
+                        <span>
+                            eh que hoje eu acordei meio taehyung de birra chateado fazendo bico pq o namjoon e o jimin
+                            tavam sentados juntos mas longe dele
+                        </span>
                     </div>
 
-                    <div class="flex items-center">
-                        <x-icons.dots-h class="w-5 fill-slate-500" />
+                    <div class="w-full mt-3 rounded-lg minmax bg-slate-400">
+
                     </div>
-                </div>
 
-                <div>
-                    <span>
-                        eh que hoje eu acordei meio taehyung de birra chateado fazendo bico pq o namjoon e o jimin
-                        tavam sentados juntos mas longe dele
-                    </span>
-                </div>
-
-                <div class="w-full mt-3 rounded-lg minmax bg-slate-400">
 
                 </div>
 
+                <div class="flex flex-col w-full">
+                    <div class="flex flex-row justify-between">
 
-            </div>
-            <div class="flex flex-col w-full">
-                <div class="flex flex-row justify-between">
+                        <div>
+                            <span>Name</span>
+                            <span class="text-sm text-white/50">@luangbt</span>
+                            <span>•</span>
+                            <span class="text-sm text-white/50">14 min</span>
+                        </div>
+
+                        <div class="flex items-center">
+                            <x-icons.dots-h class="w-5 fill-slate-500" />
+                        </div>
+                    </div>
 
                     <div>
-                        <span>Name</span>
-                        <span class="text-sm text-white/50">@luangbt</span>
-                        <span>•</span>
-                        <span class="text-sm text-white/50">14 min</span>
+                        <span>
+                            eh que hoje eu acordei meio taehyung de birra chateado fazendo bico pq o namjoon e o jimin
+                            tavam sentados juntos mas longe dele
+                        </span>
                     </div>
 
-                    <div class="flex items-center">
-                        <x-icons.dots-h class="w-5 fill-slate-500" />
+                    <div class="w-full mt-3 rounded-lg minmax bg-slate-400">
+
                     </div>
-                </div>
 
-                <div>
-                    <span>
-                        eh que hoje eu acordei meio taehyung de birra chateado fazendo bico pq o namjoon e o jimin
-                        tavam sentados juntos mas longe dele
-                    </span>
-                </div>
-
-                <div class="w-full mt-3 rounded-lg minmax bg-slate-400">
 
                 </div>
-
-
             </div>
-            <div class="flex flex-col w-full">
-                <div class="flex flex-row justify-between">
-
-                    <div>
-                        <span>Name</span>
-                        <span class="text-sm text-white/50">@luangbt</span>
-                        <span>•</span>
-                        <span class="text-sm text-white/50">14 min</span>
-                    </div>
-
-                    <div class="flex items-center">
-                        <x-icons.dots-h class="w-5 fill-slate-500" />
-                    </div>
-                </div>
-
-                <div>
-                    <span>
-                        eh que hoje eu acordei meio taehyung de birra chateado fazendo bico pq o namjoon e o jimin
-                        tavam sentados juntos mas longe dele
-                    </span>
-                </div>
-
-                <div class="w-full mt-3 rounded-lg minmax bg-slate-400">
-
-                </div>
 
 
-            </div>
+
+
+
+
 
         </div>
         {{-- ===================== END MAIN ===================== --}}
 
-        <div class="">
 
-        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
+    {{-- ===================== END CONTAINER ===================== --}}
 
 </x-app-layout>
