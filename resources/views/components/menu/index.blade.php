@@ -1,25 +1,11 @@
-@props(['icon', 'svg', 'title' => null, 'route', 'tweet'])
-
-
-@php
-$classes = ($tweet ?? false)
-            ? 'item-start xl:w-60 bg-[#1DA1F2] rounded-full justify-center'
-            : 'flex flex-col items-start justify-center transition duration-300';
-@endphp
-
-@if ($title)
-    <div {{ $attributes->merge(['class' => $classes]) }}>
-        <a href="{{ $route }}" class="flex items-center p-2 transition-all rounded-full xl:justify-center hover:bg-gray-600/20 xl:px-4 xl:py-3">
-            <x-dynamic-component :component="'icons.' . $icon" {{ $attributes->merge(['class' => $svg]) }} />
-            <span class="md:hidden xl:flex  text-[20px] font-semibold tracking-wider">
-                {{ $title }}
-            </span>
-        </a>
-    </div>
-@else
-    <div class="flex flex-col items-start justify-center ">
-        <a href="{{ $route }}" class="transition-all rounded-full hover:bg-gray-600/20 md:p-2 xl:p-3">
-            <x-dynamic-component :component="'icons.' . $icon" {{ $attributes->merge(['class' => $svg]) }} />
-        </a>
-    </div>
-@endif
+<div class="top-0 left-0 flex-col hidden h-screen bg-black md:flex item gap-y-4 xl:fixed md:fixed">
+    <x-menu.item icon="twitter" route="/" svg="fill-white w-7 xl:w-8" />
+    <x-menu.item icon="home" title="Home" route="/" svg="fill-white w-7 xl:w-8 xl:mr-6" />
+    <x-menu.item icon="search" title="Explorar" route="/" svg="fill-white w-7 xl:w-8 xl:mr-6" />
+    <x-menu.item icon="notifications" title="Notifications" route="/" svg="fill-white w-7 xl:w-8 xl:mr-6" />
+    <x-menu.item icon="blue-md" title="Verified" route="/" svg="fill-white w-7 xl:w-8 xl:mr-6" />
+    <x-menu.item icon="message" title="Messages" route="/" svg="fill-white w-7 xl:w-8 xl:mr-6" />
+    <x-menu.item icon="profile" title="Profile" route="/" svg="fill-white w-7 xl:w-8 xl:mr-6" />
+    <x-menu.item icon="dots-circle" title="More" route="/" svg="fill-white w-7 xl:w-8 xl:mr-6" />
+    <x-menu.item icon="tweet" title="Tweet" tweet route="/" svg="fill-white w-8 xl:w-0" />
+</div>

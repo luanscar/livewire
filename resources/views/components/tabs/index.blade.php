@@ -1,3 +1,3 @@
-<div class="flex flex-row justify-center items-center w-full text-sm tracking-wider font-bold ">
+<div class="flex flex-row items-center justify-center w-full text-sm font-bold tracking-wider ">
     {{ $slot }}
 </div>

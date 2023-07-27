@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="h-full flex">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="w-screen h-screen">
 
 <head>
     <meta charset="utf-8">
@@ -17,7 +17,7 @@
     @livewireStyles
 </head>
 
-<body class="box-border font-sans antialiased bg-slate-900">
+<body class="">
 
     <main>
         {{ $slot }}
