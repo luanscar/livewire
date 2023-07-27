@@ -48,9 +48,8 @@
                     </div>
 
                     <x-tabs>
-
-                        <x-slot:title>For you </x-slot:title>
-                        <x-slot:title>Following </x-slot:title>
+                        <x-tabs.tab title="For you" />
+                        <x-tabs.tab active="true" title="Following" />
                     </x-tabs>
 
                     {{-- <div class="flex flex-row justify-center items-center w-full text-sm tracking-wider font-bold ">
