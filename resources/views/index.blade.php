@@ -1,21 +1,26 @@
 <x-app-layout>
+
+
     {{-- START CONTAINER --}}
     <div
-        class="relative grid w-screen h-screen grid-flow-col overflow-x-hidden font-sans antialiased text-white grid-cols2 bg-slate-900">
+        class="md:grid w-screen h-screen grid-flow-col relative overflow-x-hidden font-sans antialiased gap-4 text-white
+        md:auto-cols-auto  bg-slate-900">
 
-        <div class="relative ">
+        <div class="flex justify-end ">
             <x-menu />
         </div>
 
 
-        <div class="w-full h-full">
+        <div class="md:col-span-6 xl:col-span-2">
             <x-feed />
+
+            <div class="hidden  xl:grid">
+                <x-sidebar />
+            </div>
         </div>
 
-        <x-sidebar />
-        <div>
 
-        </div>
+
 
     </div>
     {{-- ===================== END CONTAINER ===================== --}}

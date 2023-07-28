@@ -1,4 +1,4 @@
-<div class="top-0 left-0 flex-col hidden h-screen bg-black md:flex item gap-y-4 xl:fixed md:fixed">
+<div class="top-0 flex-col hidden h-screen md:flex  gap-y-4 xl:fixed md:fixed">
     <x-menu.item icon="twitter" route="/" svg="fill-white w-7 xl:w-8" />
     <x-menu.item icon="home" title="Home" route="/" svg="fill-white w-7 xl:w-8 xl:mr-6" />
     <x-menu.item icon="search" title="Explorar" route="/" svg="fill-white w-7 xl:w-8 xl:mr-6" />
