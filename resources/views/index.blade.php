@@ -3,20 +3,19 @@
 
     {{-- START CONTAINER --}}
     <div
-        class="md:grid w-screen h-screen grid-flow-col relative overflow-x-hidden font-sans antialiased gap-4 text-white
-        md:auto-cols-auto  bg-slate-900">
+        class="relative flex-row h-full w-full overflow-x-hidden font-sans antialiased text-white gap-4 md:flex bg-slate-900">
 
-        <div class="flex justify-end ">
+        <div class="flex flex-col items-end w-24  shrink xl:justify-end xl:grow">
             <x-menu />
         </div>
 
 
-        <div class="md:col-span-6 xl:col-span-2">
+        <div class="border-x-[0.625px] border-slate-600 flex flex-col  h-full w-[600px]">
             <x-feed />
+        </div>
 
-            <div class="hidden  xl:grid">
-                <x-sidebar />
-            </div>
+        <div class="hidden xl:flex xl:w-1/4 min-w-[72px] shrink">
+            <x-sidebar />
         </div>
 
 
