@@ -39,7 +39,7 @@
 
 
 @if ($title)
-    <a href="{{ $route }}" class="flex xl:w-60">
+    <a href="{{ $route }}" class="flex">
         <div class="{{ $classes }} ">
             <x-dynamic-component :component="'icons.' . $icon" {{ $attributes->merge(['class' => $svg]) }} />
             <span class="md:hidden xl:flex text-[20px] font-semibold tracking-wider">
