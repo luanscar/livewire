@@ -17,15 +17,10 @@
     @livewireStyles
 </head>
 
-<body class="h-full bg-black scroll-smooth" x-transition x-data="{
-    atTop: false,
-    open: false,
-}" x-init="window.addEventListener('beforeunload', (event) => {
-    document.documentElement.scrollTop = 0;
-});">
+<body class="h-full bg-black scroll-smooth">
 
 
-    <main>
+    <main {{ $attributes }}>
         {{ $slot }}
     </main>
 

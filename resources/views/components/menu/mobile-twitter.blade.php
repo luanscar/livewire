@@ -1,4 +1,4 @@
-<section>
+<section x-transition class="z-10">
 
     <div x-show="open" x-cloak x-transition:enter="transition ease-out duration-300"
         x-transition:enter-start="opacity-0  -translate-x-10 "
@@ -22,7 +22,7 @@
 
             <div class="p-4">
                 <div class="grid grid-cols-2 place-content-stretch">
-                    <div class="h-[40px] w-[40px] bg-slate-400 rounded-full"></div>
+                    <x-menu.avatar class="w-12 rounded-full overflow-hidden" />
                     <x-icons.plus
                         class="h-8 p-1.5 w-8  border fill-white border-gray-400 rounded-full place-self-center justify-self-end" />
                 </div>
