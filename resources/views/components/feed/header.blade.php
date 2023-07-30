@@ -1,4 +1,4 @@
-<header class="backdrop-blur-[12px]  z-3 pointer-events-auto w-full sticky top-0 duration-500 bg-black/10"
+<header class="backdrop-blur-[12px]  z-3 pointer-events-auto w-full sticky -top-[0.5px] duration-500 bg-black/10"
     @scroll.window="atTop = (window.pageYOffset < 0.5) ? false : true" :class="{ 'max-sm:-translate-y-16': atTop, }">
 
     <div class="p-4 text-2xl hidden md:flex">
@@ -19,7 +19,7 @@
         </div>
     </div>
 
-    <nav class="flex justify-center flex-row text-center  border-b-[0.625px] border-slate-600  w-full">
+    <nav class="flex justify-center flex-row text-center  border-b-[0.625px] border-outline  w-full">
         <x-tabs title="For you" active="true" />
         <x-tabs title="Following" />
     </nav>

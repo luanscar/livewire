@@ -19,10 +19,14 @@ export default {
             lg: '976px',
             xl: '1440px',
           },
+
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                outline: '#2f3336',
+              },
         },
     },
 
