@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="w-screen h-screen">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="h-screen">
 
 <head>
     <meta charset="utf-8">
@@ -17,7 +17,13 @@
     @livewireStyles
 </head>
 
-<body class="">
+<body class="h-full bg-black scroll-smooth" x-transition x-data="{
+    atTop: false,
+    open: false,
+}" x-init="window.addEventListener('beforeunload', (event) => {
+    document.documentElement.scrollTop = 0;
+});">
+
 
     <main>
         {{ $slot }}

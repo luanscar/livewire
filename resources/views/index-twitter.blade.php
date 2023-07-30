@@ -1,4 +1,4 @@
-<x-app-layout x-data="{ open: false }" class="z-10">
+<x-app-layout x-data="{ atTop: false } class =" z-10">
 
 
     <header class="grid grid-cols-3 grid-flow-col w-full justify-items-start py-[10.5px] px-4">

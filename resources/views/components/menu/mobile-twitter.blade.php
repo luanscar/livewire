@@ -1,19 +1,22 @@
-<section :class="{ 'block': open, 'hidden': !open }" class="hidden sm:hidden">
+<section>
 
-    <div x-show="open" x-transition:enter="transition ease-out duration-300"
-        x-transition:enter-start="opacity-0  -translate-x-10 " x-transition:enter-end="opacity-100 scale-100"
-        x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 scale-100"
-        x-transition:leave-end="opacity-0 -translate-x-9 scale-100"
-        class="grid grid-flow-row  fixed w-full bg-[#5b708366] top-0 h-screen shrink-1">
+    <div x-show="open" x-cloak x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0  -translate-x-10 "
+        x-transition:enter-end="opacity-100 transition ease-in-out duration-300 scale-100"
+        x-transition:leave="transition ease-in-out duration-300"
+        x-transition:leave-start="opacity-100 transition ease-in-out duration-300 scale-100"
+        x-transition:leave-end="opacity-0 transition ease-in-out duration-300 -translate-x-9 scale-100"
+        class="grid grid-flow-row  fixed w-full bg-[#5b708366] top-0 h-screen"
+        :class="{ 'block': open, '-translate-x-200': !open }">
 
-        <div class="bg-black w-3/4  shadow-lg shadow-gray-500/90" @click.outside="open = false">
+        <div class="bg-black w-3/4 shadow-lg shadow-gray-500/90" @click.outside="open = false">
 
             <div class="grid grid-flow-col  place-content-stretch h-[53px] z-2 px-4">
                 <span class="place-self-center justify-self-start">Informações da conta</span>
 
                 <div class="place-self-center justify-self-end p-2 rounded-full hover:bg-gray-600/20"
                     x-on:click="open = ! open">
-                    <x-menu.item icon="close" class="w-5 fill-white" />
+                    <x-menu.item icon="close" svg="w-5 fill-white" />
                 </div>
             </div>
 
@@ -41,12 +44,12 @@
                 </div>
             </div>
 
-            <div class="flex flex-col">
-                <x-menu.item icon="profile" title="Perfil" svg="h-6 w-6 mr-6 fill-white"
+            <div class="flex grow flex-col w-full">
+                <x-menu.item icon="profile" route="/" title="Perfil" svg="h-6 w-6 mr-6 fill-white"
                     class="flex flex-row items-center  m-2 text-2xl" />
-                <x-menu.item icon="blue" title="Blue" svg="h-6 w-6 mr-6 fill-white "
+                <x-menu.item icon="blue" route="/" title="Blue" svg="h-6 w-6 mr-6 fill-white "
                     class="flex flex-row items-center m-2 text-2xl " />
-                <x-menu.item icon="list" title="Listas" svg="h-6 w-6 mr-6 fill-white "
+                <x-menu.item icon="list" route="/" title="Listas" svg="h-6 w-6 mr-6 fill-white "
                     class="flex flex-row items-center m-2 text-2xl " />
             </div>
 

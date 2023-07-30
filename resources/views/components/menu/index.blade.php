@@ -1,4 +1,4 @@
-<div class="top-0 flex-col flex-1 hidden h-screen md:flex gap-y-4 xl:fixed md:fixed">
+<div class="top-0 hidden min-h-screen md:fixed md:flex flex-col gap-y-4 xl:fixed ">
     <x-menu.item icon="twitter" route="/" svg="fill-white w-7 xl:w-8" />
     <x-menu.item icon="home" title="Home" route="/" svg="fill-white w-7 xl:w-8 xl:mr-6" />
     <x-menu.item icon="search" title="Explorar" route="/" svg="fill-white w-7 xl:w-8 xl:mr-6" />
@@ -7,7 +7,8 @@
     <x-menu.item icon="message" title="Messages" route="/" svg="fill-white w-7 xl:w-8 xl:mr-6" />
     <x-menu.item icon="profile" title="Profile" route="/" svg="fill-white w-7 xl:w-8 xl:mr-6" />
     <x-menu.item icon="dots-circle" title="More" route="/" svg="fill-white w-7 xl:w-8 xl:mr-6" />
-    <x-menu.item icon="tweet" title="Tweet" tweet route="/" svg="fill-white w-8 xl:w-0" />
+    <x-menu.item icon="tweet" title="Tweet" tweet route="/" svg="fill-white w-8 xl:w-0"
+        class="justify-center w-full" />
 
     <x-menu.avatar />
 </div>
