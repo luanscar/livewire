@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="h-screen">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8">
@@ -17,7 +17,7 @@
     @livewireStyles
 </head>
 
-<body class="h-full bg-black scroll-smooth">
+<body class="bg-zinc-600 scroll-smooth">
 
 
     <main {{ $attributes }}>

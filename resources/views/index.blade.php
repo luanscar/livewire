@@ -3,8 +3,7 @@
 
 
     {{-- START CONTAINER --}}
-    <div
-        class="flex justify-center items-center flex-row font-sans h-screen antialiased text-white gap-4 md:flex bg-black">
+    <div class="flex justify-center items-center flex-row font-sans antialiased text-white gap-4 md:flex bg-black">
 
         <div class="md:flex flex-col hidden items-end w-24 xl:justify-end xl:grow">
             <x-menu>
@@ -19,14 +18,14 @@
                 <x-menu.item icon="dots-circle" title="More" route="/" svg="fill-white w-7 xl:w-8 xl:mr-6" />
                 <x-menu.item icon="tweet" title="Tweet" tweet="blue" route="/" svg="fill-white w-8 xl:w-0" />
 
-                <x-menu.profile-info />
+                <x-menu.profile-info classes="xl" />
             </x-menu>
 
 
         </div>
 
 
-        <div class="md:border-x-[0.625px] border-outline relative w-screen h-full flex flex-col md:w-[600px] z-1"
+        <div class="md:border-x-[0.625px] border-outline relative w-screen  flex flex-col md:w-[600px] z-1"
             x-data="{
                 atTop: false,
                 open: false,
