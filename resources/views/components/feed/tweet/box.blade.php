@@ -4,9 +4,7 @@
 
     <div class="space-y-2 flex flex-col">
         <span>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia accusantium corrupti necessitatibus
-            repellendus
-
+           {{ $tweet->created_by }}
         </span>
 
         <div class="grid grid-flow-col auto-cols-auto">

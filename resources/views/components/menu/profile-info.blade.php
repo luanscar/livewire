@@ -1,16 +1,16 @@
 @props(['classes' => null])
 
 @php
-    
+
     switch ($classes) {
         case 'xl':
             $classes = 'hidden absolute items-center bottom-5 xl:flex flex-row w-full gap-3 hover:bg-outline rounded-full xl:p-3';
             break;
-    
+
         case 'sm':
             $classes = 'flex flex-row gap-3 items-center';
             break;
-    
+
         default:
             # code...
             break;

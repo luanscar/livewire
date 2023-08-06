@@ -33,8 +33,13 @@
                 document.documentElement.scrollTop = 0;
             });">
 
+
             <x-feed />
+
+
             <x-menu.mobile-twitter />
+
+
             <x-menu sm>
                 <x-menu.item icon="home" route="/" svg="fill-white w-7 xl:w-8 xl:mr-6" />
                 <x-menu.item icon="search" route="/" svg="fill-white w-7 xl:w-8 xl:mr-6" />

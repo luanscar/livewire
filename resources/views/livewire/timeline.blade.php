@@ -1,7 +1,7 @@
 <div>
     @foreach($tweets as $tweet)
-       <div>
-           {{ $tweet->body }}
-       </div>
+        <x-feed.tweet.box :tweet="$tweet" />
     @endforeach
 </div>
+
+

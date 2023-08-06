@@ -72,3 +72,16 @@ it('should be show the tweet on the timeline', function (){
     livewire(Timeline::class)
         ->assertSee('This is my first tweet');
 });
+
+
+it('set body as null after tweeting', function (){
+        $user = User::factory()->create();
+
+        actingAs($user);
+
+        livewire(Tweet\Create::class)
+            ->set('body', 'This is my first tweet')
+            ->call('tweet')
+            ->assertEmitted('tweet::created')
+            ->assertSet('body', null);
+});
