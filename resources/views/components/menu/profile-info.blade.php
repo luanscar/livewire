@@ -1,4 +1,4 @@
-@props(['classes' => null])
+@props(['classes' => null, 'data' => null])
 
 @php
 
@@ -24,7 +24,7 @@
 
     <div class="flex flex-col justify-end text-md">
         <div>
-            Name
+            {{ $data->createdBy->name }}
         </div>
 
         <div class="text-gray-600">

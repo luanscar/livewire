@@ -1,10 +1,15 @@
+@props([
+    'tweet'
+])
+
+
 <div class="py-3 px-4 flex flex-col ">
 
-    <x-menu.profile-info classes="sm" />
+    <x-menu.profile-info classes="sm" :data="$tweet"/>
 
     <div class="space-y-2 flex flex-col">
         <span>
-           {{ $tweet->created_by }}
+           {{ $tweet->body }}
         </span>
 
         <div class="grid grid-flow-col auto-cols-auto">
