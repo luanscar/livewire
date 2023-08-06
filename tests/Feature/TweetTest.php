@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\Timeline;
 use App\Http\Livewire\Tweet;
 use App\Models\User;
 use function Pest\Laravel\actingAs;
@@ -58,4 +59,16 @@ test('the tweet body should have a max length of 140 characters', function() {
         ->assertHasErrors(['body' => 'max']);
 });
 
-// todo('should be show the tweet on the timeline');
+it('should be show the tweet on the timeline', function (){
+    $user = User::factory()->create();
+
+    actingAs($user);
+
+    livewire(Tweet\Create::class)
+        ->set('body', 'This is my first tweet')
+        ->call('tweet')
+        ->assertEmitted('tweet::created');
+
+    livewire(Timeline::class)
+        ->assertSee('This is my first tweet');
+});
