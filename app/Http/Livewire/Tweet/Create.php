@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\Tweet;
 
 use App\Models\Tweet;
+use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\View\View;
 use Livewire\Component;
@@ -18,9 +19,14 @@ class Create extends Component
         return view('livewire.tweet.create');
     }
 
-    public function tweet() {
+    public function tweet(): void
+    {
 
         $this->authorize('create', Tweet::class);
+
+        $this->validate([
+            'body' => 'required',
+        ]);
 
         Tweet::query()->create([
             'body' => $this->body,
