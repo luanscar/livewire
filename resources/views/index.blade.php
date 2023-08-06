@@ -45,7 +45,7 @@
         </div>
 
         <div class="hidden xl:flex xl:w-1/3 min-w-[72px] shrink">
-            <x-sidebar />
+
         </div>
 
 

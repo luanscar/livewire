@@ -6,7 +6,7 @@
         x-transition:leave="transition ease-in-out duration-300"
         x-transition:leave-start="opacity-100 transition ease-in-out duration-300 scale-100"
         x-transition:leave-end="opacity-0 transition ease-in-out duration-300 -translate-x-9 scale-100"
-        class="grid grid-flow-row  fixed w-full bg-[#5b708366] top-0 h-screen"
+        class="grid grid-flow-row md:hidden fixed w-full bg-[#5b708366] top-0 h-screen"
         :class="{ 'block': open, '-translate-x-200': !open }">
 
         <div class="bg-black w-3/4 shadow-lg shadow-gray-500/90" @click.outside="open = false">
@@ -44,7 +44,7 @@
                 </div>
             </div>
 
-            <div class="flex grow flex-col w-full">
+            <div class="flex grow flex-col  w-full">
                 <x-menu.item icon="profile" route="/" title="Perfil" svg="h-6 w-6 mr-6 fill-white"
                     class="flex flex-row items-center  m-2 text-2xl" />
                 <x-menu.item icon="blue" route="/" title="Blue" svg="h-6 w-6 mr-6 fill-white "

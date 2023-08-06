@@ -1,0 +1,32 @@
+ii  php-bcmath                    2:8.2+93+ubuntu22.04.1+deb.sury.org+2        all          Bcmath module for PHP [default]
+ii  php-common                    2:93+ubuntu22.04.1+deb.sury.org+2            all          Common files for PHP packages
+ii  php-curl                      2:8.2+93+ubuntu22.04.1+deb.sury.org+2        all          CURL module for PHP [default]
+ii  php-json                      2:8.2+93+ubuntu22.04.1+deb.sury.org+2        all          JSON module for PHP [default]
+ii  php-mbstring                  2:8.2+93+ubuntu22.04.1+deb.sury.org+2        all          MBSTRING module for PHP [default]
+ii  php-mysql                     2:8.2+93+ubuntu22.04.1+deb.sury.org+2        all          MySQL module for PHP [default]
+ii  php-tokenizer                 1.2.1-1                                      all          tokenized PHP source to XML converter
+ii  php-xml                       2:8.2+93+ubuntu22.04.1+deb.sury.org+2        all          DOM, SimpleXML, WDDX, XML, and XSL module for PHP [default]
+ii  php-zip                       2:8.2+93+ubuntu22.04.1+deb.sury.org+2        all          Zip module for PHP [default]
+ii  php8.0                        1:8.0.29-1+ubuntu22.04.1+deb.sury.org+1      all          server-side, HTML-embedded scripting language (metapackage)
+ii  php8.0-cli                    1:8.0.29-1+ubuntu22.04.1+deb.sury.org+1      amd64        command-line interpreter for the PHP scripting language
+ii  php8.0-common                 1:8.0.29-1+ubuntu22.04.1+deb.sury.org+1      amd64        documentation, examples and common module for PHP
+ii  php8.0-fpm                    1:8.0.29-1+ubuntu22.04.1+deb.sury.org+1      amd64        server-side, HTML-embedded scripting language (FPM-CGI binary)
+ii  php8.0-igbinary               3.2.14-1+ubuntu22.04.1+deb.sury.org+1        amd64        igbinary PHP serializer
+ii  php8.0-imap                   1:8.0.29-1+ubuntu22.04.1+deb.sury.org+1      amd64        IMAP module for PHP
+ii  php8.0-mbstring               1:8.0.29-1+ubuntu22.04.1+deb.sury.org+1      amd64        MBSTRING module for PHP
+ii  php8.0-opcache                1:8.0.29-1+ubuntu22.04.1+deb.sury.org+1      amd64        Zend OpCache module for PHP
+ii  php8.0-readline               1:8.0.29-1+ubuntu22.04.1+deb.sury.org+1      amd64        readline module for PHP
+ii  php8.0-redis                  5.3.7++-1+ubuntu22.04.1+deb.sury.org+1       amd64        PHP extension for interfacing with Redis
+ii  php8.0-xml                    1:8.0.29-1+ubuntu22.04.1+deb.sury.org+1      amd64        DOM, SimpleXML, XML, and XSL module for PHP
+ii  php8.0-zip                    1:8.0.29-1+ubuntu22.04.1+deb.sury.org+1      amd64        Zip module for PHP
+ii  php8.2-bcmath                 8.2.8-1+ubuntu22.04.1+deb.sury.org+1         amd64        Bcmath module for PHP
+ii  php8.2-cli                    8.2.8-1+ubuntu22.04.1+deb.sury.org+1         amd64        command-line interpreter for the PHP scripting language
+ii  php8.2-common                 8.2.8-1+ubuntu22.04.1+deb.sury.org+1         amd64        documentation, examples and common module for PHP
+ii  php8.2-curl                   8.2.8-1+ubuntu22.04.1+deb.sury.org+1         amd64        CURL module for PHP
+ii  php8.2-mbstring               8.2.8-1+ubuntu22.04.1+deb.sury.org+1         amd64        MBSTRING module for PHP
+ii  php8.2-mysql                  8.2.8-1+ubuntu22.04.1+deb.sury.org+1         amd64        MySQL module for PHP
+ii  php8.2-opcache                8.2.8-1+ubuntu22.04.1+deb.sury.org+1         amd64        Zend OpCache module for PHP
+ii  php8.2-phpdbg                 8.2.8-1+ubuntu22.04.1+deb.sury.org+1         amd64        server-side, HTML-embedded scripting language (PHPDBG binary)
+ii  php8.2-readline               8.2.8-1+ubuntu22.04.1+deb.sury.org+1         amd64        readline module for PHP
+ii  php8.2-xml                    8.2.8-1+ubuntu22.04.1+deb.sury.org+1         amd64        DOM, SimpleXML, XML, and XSL module for PHP
+ii  php8.2-zip                    8.2.8-1+ubuntu22.04.1+deb.sury.org+1         amd64        Zip module for PHP

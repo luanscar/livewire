@@ -1,4 +1,4 @@
-@props(['icon', 'svg', 'title' => null, 'route' => null, 'tweet' => null])
+@props(['icon', 'svg', 'title' => null, 'route' => null, 'tweet' => null, 'sm' => null])
 
 
 {{-- @php
@@ -24,13 +24,20 @@
 @endif --}}
 
 @php
+    
+    $sizes = 'p-3 xl:px-4 xl:py-3 xl:w-60  text-2xl';
+    
+    if ($sm) {
+        $sizes = 'w-20  text-[16px] h-10 ';
+    }
+    
     switch ($tweet) {
         case 'blue':
-            $classes = 'hover:bg-[#1DA1F2]/90 p-3 rounded-full justify-center flex xl:px-4 xl:py-3 items-start xl:w-60 bg-[#1DA1F2]';
+            $classes = "'hover:bg-[#1DA1F2]/90  rounded-full justify-center flex  items-center $sizes bg-[#1DA1F2] '";
             break;
     
         default:
-            $classes = 'hover:bg-[#e7e9ea1a] p-3 rounded-full justify-center flex xl:px-4 xl:py-3 items-start';
+            $classes = 'hover:bg-[#e7e9ea1a] p-3 rounded-full text-2xl justify-center flex xl:px-4 xl:py-3 items-start';
             break;
     }
     
@@ -42,7 +49,7 @@
     <a href="{{ $route }}" class="flex">
         <div class="{{ $classes }} ">
             <x-dynamic-component :component="'icons.' . $icon" {{ $attributes->merge(['class' => $svg]) }} />
-            <span class="md:hidden xl:flex text-[20px] font-semibold tracking-wider">
+            <span class='md:hidden xl:flex h-full  flex items-center  font-semibold tracking-wider'>
                 {{ $title }}
             </span>
         </div>

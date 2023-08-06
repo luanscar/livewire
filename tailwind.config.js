@@ -12,13 +12,13 @@ export default {
     theme: {
         container: {
             center: true,
-          },
-          screens: {
+        },
+        screens: {
             sm: '480px',
             md: '768px',
             lg: '976px',
             xl: '1280px',
-          },
+        },
 
         extend: {
             fontFamily: {
@@ -26,7 +26,8 @@ export default {
             },
             colors: {
                 outline: '#2f3336',
-              },
+                twitter: '#1DA1F2'
+            },
         },
     },
 

@@ -9,7 +9,7 @@
 @endphp
 
 
-<a href="/" class="flex-1 items-center justify-center flex hover:bg-slate-600/20">
+<a href="/" class="flex-1 items-center justify-center pb-2 flex hover:bg-slate-600/20">
     <div class="relative flex pt-4 pb-4 justify-center">
         <span>
             {{ $title }}
